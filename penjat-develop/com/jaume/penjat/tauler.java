@@ -51,7 +51,32 @@ public class tauler{
         return aux;
     }
 	
+	public String imprimirVides(){
+        if (intents == 1){
+            return imprimirVidesSingular();
+        }
+        else {
+            return imprimirVidesPlural();
+        }
+    }
 	
+	private String imprimirVidesSingular(){
+        return ("Et queda 1 vida de " + String.valueOf(intentsInicials));
+    }
+
+    private String imprimirVidesPlural() {
+        return ("Et queden " + String.valueOf(intents) + " de " + String.valueOf(intentsInicials));
+    }
+    
+    public boolean hasGuanyat() {
+        boolean guanyat = true;
+        for (int i = 0;(i<paraulaEndevinada.length) && (guanyat);i++) {
+            if (paraulaEndevinada[i].charAt(0) != paraulaSecreta[i]) {
+                guanyat = false;
+            }
+        }
+        return guanyat;
+    }
 	
     public String verificar(String lletra){
         if(lletra.length() != 1){
