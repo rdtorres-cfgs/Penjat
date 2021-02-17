@@ -1,9 +1,9 @@
-public class Tauler {
+public class tauler{
     char[] paraulaSecreta;
     int intents;
     String[] paraulaEndevinada;
 
-    public Tauler(){
+    public tauler(){
 
     }
     public void inicialitzarPartida(String paraula, int num){
@@ -34,10 +34,8 @@ public class Tauler {
             if (!trobada) {
                 intents--;
             }
-            //Falta pasar paraulaEndevinada a String y hacer return
+            return "";
         }
-
-
     }
     public String[] getPalabraEndevinada(){
         return paraulaEndevinada;

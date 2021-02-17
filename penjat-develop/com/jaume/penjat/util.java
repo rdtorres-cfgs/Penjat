@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
-public class Util {
+public class util {
 
 
     public static String makeQuestion(String enunciat){

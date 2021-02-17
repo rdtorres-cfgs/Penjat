@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="com/jaume/penjat/" kind="src" path="penjat-develop"/>
+	<classpathentry kind="src" path="penjat-develop/com/jaume/penjat"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
