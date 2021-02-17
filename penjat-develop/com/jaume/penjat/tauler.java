@@ -11,7 +11,7 @@ public class tauler{
         paraulaSecreta = paraula.toCharArray();
         paraulaEndevinada = new String[getParaulaSecreta().length];
         for (int i = 0;i>paraulaEndevinada.length;i++) {
-            paraulaEndevinada[i] = "_";
+            paraulaEndevinada[i] = null;
         }
         intents = num;
         intentsInicials = num;
@@ -46,7 +46,11 @@ public class tauler{
 	public String imprimir() {
         String aux = "";
         for (int i = 0;i<paraulaEndevinada.length;i++) {
-            aux = aux + paraulaEndevinada[i];
+            if (paraulaEndevinada[i] == null){
+                aux = aux + "_";
+            }else{
+                aux = aux + paraulaEndevinada[i];
+            }
         }
         return aux;
     }
